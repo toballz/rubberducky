@@ -13,7 +13,7 @@ $graphics = [Drawing.Graphics]::FromImage($bmp)
 
 $graphics.CopyFromScreen($bounds.Location, [Drawing.Point]::Empty, $bounds.size)
 
-$bmp.Save("C:/xampp/htdocs/webhost/server_admin/directIP\test.png")
+$bmp.Save("$ENV:UserProfile/Pictures/test.png")
 
 $graphics.Dispose()
 $bmp.Dispose()
